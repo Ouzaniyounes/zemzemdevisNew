@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Devis zemzem pub </title>
+    <link rel="stylesheet" href="css/style-devis.css">
+    <link rel="icon" href="res/zemzemlogo.png">
+</head>
+<body>
+
+    <nav>
+        <div class="navContainer">
+            
+            <ul>
+                <li> <img src="res/zemzemlogo.png" id="LogozemzemNav" alt="Logozemzem"> </li>
+            </ul>
+            
+            <ul class="linkContainer">
+                <li> <a href="index.html"> Devis Offset </a></li>
+                <li> <a href="devisNumerique.html"> Devis Numerique </a></li>
+            </ul>
+            
+        </div>
+    </nav>
+    <div class="devis-container">
+
+        <img src="res/zemzemlogo.png" alt="" id="Zemzem-logo" >
+        <h1> Devis Numerique  </h1>
+
+        <div class="input-container affichier_none">
+            <label for="hauteur"> hauteur </label>
+            <input type="text" name="" id="hauteur" placeholder="Hauteur" class="input_class" onkeyup="Get_input_information()">
+            <label for="largeur"> largeur </label>
+            <input type="text" name="" id="largeur" placeholder="Largeur" class="input_class"  onkeyup="Get_input_information()">
+            <label for="Quantite"> Quantite </label>
+            <input type="text" name="" id="Quantite" placeholder="Largeur" class="input_class"  onkeyup="Get_input_information()">
+            <br>
+        </div>
+        
+        <div id="Montage" class="affichier_tout">
+
+            <h2 class="affichier_tout" id="devisPour"> Montage :</h2>
+    
+            <p id="hauteurP" class="affichier_tout">  </p>
+            <p id="largeurP" class="affichier_tout">  </p>
+            <p id="quantite" class="affichier_tout">  </p>
+            <p id="achat"class="affichier_tout"> </p>
+            <p id="vente"class="affichier_tout"> </p>
+            
+
+
+        </div>
+
+        <div class="buttunContainer">
+            <button id="autreDevis_button" class="affichier_tout" onclick="HideDevis()"> Faire un autre devis </button>
+        </div>
+
+        <button id="affchier_button" class="affichier_none" onclick="Affichier_devis()"> Affichier Le devis </button>
+        <script src="js/CalculeDevisNumerique.js"></script>
+</body>
+</html>

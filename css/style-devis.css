@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: #ffed00;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+#Zemzem-logo {
+    height: 35%;
+    width: 40%;    
+}
+.devis-container {
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    min-height: 600px;
+    width: 450px;
+    margin-top: 40px;
+    border: 0.5px black solid;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly ;
+    /* display: none; */
+}
+label {
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    width: 60px;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    
+}
+.input_class {
+    margin: 3px;
+    padding: 0 8px;
+    height: 35px;
+    width: 80%;
+    border: 1px #d7d5d5 solid;
+    background-color: #f0f0f0;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    
+
+}
+#affchier_button {
+    height: 35px;
+    width: 150px;
+    border: 2.5px #727476  solid;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    
+}
+#affchier_button:hover {
+    background-color: #e5017d;
+    color: white;
+    
+}
+
+@media(max-width:680px) {
+    .devis-container {
+        width: 350px;
+    }
+} 
+ h1 {
+    text-align: center;
+ }
+ h1,h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight:400;
+    color: #e5017d;
+ }
+ p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+#Montage   {
+    margin-left:20px;
+    width: 100%;
+    display: none;
+}
+#autreDevis_button {
+    height: 35px;
+    width: 150px;
+    border: 2.5px #727476  solid;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    display: none;
+}
+.buttunContainer {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}   
+#autreDevis_button:hover {
+    background-color: #e5017d;
+    color: white;
+}
+.isMoreCheck_container label {
+    display: inline-block;
+    width: auto; 
+}
+#nombreFeuille {
+    background-color: #c8c7c7;
+    border: 1px #c8c7c7 solid;
+
+} 
+
+nav {
+    width: 100vw;
+}
+.navContainer {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+ul {
+    margin-top: 10px;
+}
+.linkContainer  { 
+    width: 300px;
+    display: flex;
+    margin: 0 120px;
+    justify-content: space-between;
+    
+}
+li{
+    padding: 10px;
+    list-style:none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+li:hover {
+    color: white;
+    background-color: #e5017d;
+    border-radius: 30px;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#LogozemzemNav {
+    height: 100px;
+    width: 100px;
+}

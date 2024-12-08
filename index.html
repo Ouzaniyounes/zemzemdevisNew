@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Devis zemzem pub </title>
+    <link rel="stylesheet" href="css/style-devis.css">
+    <link rel="icon" href="res/zemzemlogo.png">
+</head>
+<body>
+
+    <nav>
+        <div class="navContainer">
+            
+            <ul>
+                <li> <img src="res/zemzemlogo.png" id="LogozemzemNav" alt="Logozemzem"> </li>
+            </ul>
+            
+            <ul class="linkContainer">
+                <li> <a href="index.html"> Devis Offset </a></li>
+                <li> <a href="devisNumerique.html"> Devis Numerique </a></li>
+            </ul>
+            
+        </div>
+    </nav>
+    <br>
+    <div class="devis-container">
+
+        <img src="res/zemzemlogo.png" alt="" id="Zemzem-logo" class="affichier_none">
+        <h1> Devis Offset </h1>
+
+        <div class="input-container affichier_none">
+
+            <label for="hauteur"> hauteur </label>
+            <input type="text" name="" id="hauteur" placeholder="Hauteur" class="input_class" onkeyup="Get_input_information()">
+            <label for="largeur"> largeur </label>
+            <input type="text" name="" id="largeur" placeholder="Largeur" class="input_class"  onkeyup="Get_input_information()">
+            <br>
+            <div class="isMoreCheck_container" >
+                <input type="checkbox" name="" id="isMoreCheck" onclick="getCheck()">
+                <label for="isMoreCheck"> Faire devis avec plus de 125 feuille</label>
+            </div>
+            
+            <br>
+            <input type="number" id="nombreFeuille" name="nombreFeuille" step="62" min="187" max="" placeholder="Plus de 125 feuille" class="input_class" disabled onkeyup="Get_input_information()">
+            <p></p>
+        </div>
+        
+        <div id="Montage" class="affichier_tout">
+
+            <h1 id="header1" class="affichier_tout"> La forme impression : </h1>
+
+             <!-- Pour Montage  -->
+            <h2 class="affichier_tout" > </h2>
+            <p id="dimenstion_sur_30" class="affichier_tout"> </p>
+            <p id="dimenstion_sur_20"class="affichier_tout"> </p>
+            <p id="nombre_pose_30" class="affichier_tout"> </p>
+            <p id="nombre_pose_20" class="affichier_tout"> </p>
+            <p id="nombre_pose_Tout" class="affichier_tout"> </p>
+
+            <!-- Pour 62 feuille -->
+            <h2 class="affichier_tout" id="newNombreHeader"> </h2>
+            <h2 class="affichier_tout headers" id="headers"> Pour 62 feuille :</h2>
+            <p id="tirage_62" class="affichier_tout headers"> </p>
+            <p id="quantite_62" class="affichier_tout headers"> </p>
+            <p id="achat_62" class="affichier_tout headers"></p> </p>
+
+            <!-- Pour 125 feuille -->
+            <h2 class="affichier_tout headers" id="headers"> Pour 125 feuille :</h2>
+            <p id="tirage_125" class="affichier_tout"> </p>
+            <p id="quantite_125" class="affichier_tout"> </p>
+            <p id="achat_125" class="affichier_tout"></p> </p>
+
+
+        </div>
+
+        <div class="buttunContainer">
+            <button id="autreDevis_button" class="affichier_tout" onclick="HideDevis()"> Faire un autre devis </button>
+        </div>
+
+       
+
+        <button id="affchier_button" class="affichier_none" onclick="Affichier_devis()"> Affichier Le devis </button>
+        <script src="js/CalculeDevis.js"></script>
+</body>
+</html>
